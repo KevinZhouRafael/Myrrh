@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		560CF9C11F99FF59005E1755 /* NSManagedObject+ValidateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CF9C01F99FF59005E1755 /* NSManagedObject+ValidateError.swift */; };
+		560CF9C31F9A0E4A005E1755 /* NSManagedObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CF9C21F9A0E4A005E1755 /* NSManagedObject+Extensions.swift */; };
+		5631F0441F985741007A3660 /* CoreDataStack+Obervers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631F0431F985741007A3660 /* CoreDataStack+Obervers.swift */; };
+		5631F0531F98B74C007A3660 /* MyrrhManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631F0521F98B74C007A3660 /* MyrrhManagedObject.swift */; };
+		56712E611F7E5120001A56E1 /* Myrrh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56712E601F7E5120001A56E1 /* Myrrh.swift */; };
+		568839CE1F7DFAFC0004FEB8 /* Myrrh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568839C41F7DFAFB0004FEB8 /* Myrrh.framework */; };
+		568839D51F7DFAFC0004FEB8 /* Myrrh.h in Headers */ = {isa = PBXBuildFile; fileRef = 568839C71F7DFAFB0004FEB8 /* Myrrh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		568839EF1F7E04AF0004FEB8 /* NSSortDescriptor+generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839E01F7E04AE0004FEB8 /* NSSortDescriptor+generator.swift */; };
+		568839F01F7E04AF0004FEB8 /* Managed+Aggregation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839E11F7E04AE0004FEB8 /* Managed+Aggregation.swift */; };
+		568839F11F7E04AF0004FEB8 /* Managed+Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839E21F7E04AE0004FEB8 /* Managed+Requests.swift */; };
+		568839F21F7E04AF0004FEB8 /* Managed+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839E31F7E04AE0004FEB8 /* Managed+Chainable.swift */; };
+		568839F31F7E04AF0004FEB8 /* Managed+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839E41F7E04AE0004FEB8 /* Managed+Query.swift */; };
+		568839F41F7E04AF0004FEB8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839E51F7E04AE0004FEB8 /* CoreDataStack.swift */; };
+		568839F51F7E04AF0004FEB8 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839E61F7E04AE0004FEB8 /* Managed.swift */; };
+		568839F61F7E04AF0004FEB8 /* NSFetchRequest+Myrrh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839E71F7E04AE0004FEB8 /* NSFetchRequest+Myrrh.swift */; };
+		568839F71F7E04AF0004FEB8 /* NSComparisonPredicate+generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839E81F7E04AE0004FEB8 /* NSComparisonPredicate+generator.swift */; };
+		568839F81F7E04AF0004FEB8 /* NSPredicate+generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839E91F7E04AE0004FEB8 /* NSPredicate+generator.swift */; };
+		568839F91F7E04AF0004FEB8 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839EA1F7E04AF0004FEB8 /* Query.swift */; };
+		568839FA1F7E04AF0004FEB8 /* Collection+CoreDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839EB1F7E04AF0004FEB8 /* Collection+CoreDataExtensions.swift */; };
+		568839FB1F7E04AF0004FEB8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839EC1F7E04AF0004FEB8 /* Logger.swift */; };
+		568839FC1F7E04AF0004FEB8 /* NSManagedObjectContext+save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839ED1F7E04AF0004FEB8 /* NSManagedObjectContext+save.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		568839CF1F7DFAFC0004FEB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 568839BB1F7DFAFB0004FEB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 568839C31F7DFAFB0004FEB8;
+			remoteInfo = Myrrh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		560CF9C01F99FF59005E1755 /* NSManagedObject+ValidateError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+ValidateError.swift"; sourceTree = "<group>"; };
+		560CF9C21F9A0E4A005E1755 /* NSManagedObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Extensions.swift"; sourceTree = "<group>"; };
+		5631F0431F985741007A3660 /* CoreDataStack+Obervers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataStack+Obervers.swift"; sourceTree = "<group>"; };
+		5631F0521F98B74C007A3660 /* MyrrhManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyrrhManagedObject.swift; sourceTree = "<group>"; };
+		56712E601F7E5120001A56E1 /* Myrrh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myrrh.swift; sourceTree = "<group>"; };
+		568839C41F7DFAFB0004FEB8 /* Myrrh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Myrrh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		568839C71F7DFAFB0004FEB8 /* Myrrh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Myrrh.h; sourceTree = "<group>"; };
+		568839C81F7DFAFC0004FEB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		568839CD1F7DFAFC0004FEB8 /* MyrrhTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyrrhTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		568839D41F7DFAFC0004FEB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		568839E01F7E04AE0004FEB8 /* NSSortDescriptor+generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSSortDescriptor+generator.swift"; sourceTree = "<group>"; };
+		568839E11F7E04AE0004FEB8 /* Managed+Aggregation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Managed+Aggregation.swift"; sourceTree = "<group>"; };
+		568839E21F7E04AE0004FEB8 /* Managed+Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Managed+Requests.swift"; sourceTree = "<group>"; };
+		568839E31F7E04AE0004FEB8 /* Managed+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Managed+Chainable.swift"; sourceTree = "<group>"; };
+		568839E41F7E04AE0004FEB8 /* Managed+Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Managed+Query.swift"; sourceTree = "<group>"; };
+		568839E51F7E04AE0004FEB8 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		568839E61F7E04AE0004FEB8 /* Managed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
+		568839E71F7E04AE0004FEB8 /* NSFetchRequest+Myrrh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFetchRequest+Myrrh.swift"; sourceTree = "<group>"; };
+		568839E81F7E04AE0004FEB8 /* NSComparisonPredicate+generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSComparisonPredicate+generator.swift"; sourceTree = "<group>"; };
+		568839E91F7E04AE0004FEB8 /* NSPredicate+generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSPredicate+generator.swift"; sourceTree = "<group>"; };
+		568839EA1F7E04AF0004FEB8 /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		568839EB1F7E04AF0004FEB8 /* Collection+CoreDataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+CoreDataExtensions.swift"; sourceTree = "<group>"; };
+		568839EC1F7E04AF0004FEB8 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		568839ED1F7E04AF0004FEB8 /* NSManagedObjectContext+save.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+save.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		568839C01F7DFAFB0004FEB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		568839CA1F7DFAFC0004FEB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				568839CE1F7DFAFC0004FEB8 /* Myrrh.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5656159E1FB6BE3500FB196C /* observer */ = {
+			isa = PBXGroup;
+			children = (
+				5631F0431F985741007A3660 /* CoreDataStack+Obervers.swift */,
+				5631F0521F98B74C007A3660 /* MyrrhManagedObject.swift */,
+				560CF9C01F99FF59005E1755 /* NSManagedObject+ValidateError.swift */,
+				560CF9C21F9A0E4A005E1755 /* NSManagedObject+Extensions.swift */,
+			);
+			path = observer;
+			sourceTree = "<group>";
+		};
+		568839BA1F7DFAFB0004FEB8 = {
+			isa = PBXGroup;
+			children = (
+				568839C61F7DFAFB0004FEB8 /* Myrrh */,
+				568839D11F7DFAFC0004FEB8 /* MyrrhTests */,
+				568839C51F7DFAFB0004FEB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		568839C51F7DFAFB0004FEB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				568839C41F7DFAFB0004FEB8 /* Myrrh.framework */,
+				568839CD1F7DFAFC0004FEB8 /* MyrrhTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		568839C61F7DFAFB0004FEB8 /* Myrrh */ = {
+			isa = PBXGroup;
+			children = (
+				568839DE1F7DFBB40004FEB8 /* Classes */,
+				568839C71F7DFAFB0004FEB8 /* Myrrh.h */,
+				568839C81F7DFAFC0004FEB8 /* Info.plist */,
+			);
+			path = Myrrh;
+			sourceTree = "<group>";
+		};
+		568839D11F7DFAFC0004FEB8 /* MyrrhTests */ = {
+			isa = PBXGroup;
+			children = (
+				568839D41F7DFAFC0004FEB8 /* Info.plist */,
+			);
+			path = MyrrhTests;
+			sourceTree = "<group>";
+		};
+		568839DE1F7DFBB40004FEB8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5656159E1FB6BE3500FB196C /* observer */,
+				56712E601F7E5120001A56E1 /* Myrrh.swift */,
+				568839E51F7E04AE0004FEB8 /* CoreDataStack.swift */,
+				568839EC1F7E04AF0004FEB8 /* Logger.swift */,
+				568839E61F7E04AE0004FEB8 /* Managed.swift */,
+				568839E11F7E04AE0004FEB8 /* Managed+Aggregation.swift */,
+				568839E31F7E04AE0004FEB8 /* Managed+Chainable.swift */,
+				568839E41F7E04AE0004FEB8 /* Managed+Query.swift */,
+				568839E21F7E04AE0004FEB8 /* Managed+Requests.swift */,
+				568839EA1F7E04AF0004FEB8 /* Query.swift */,
+				568839ED1F7E04AF0004FEB8 /* NSManagedObjectContext+save.swift */,
+				568839E91F7E04AE0004FEB8 /* NSPredicate+generator.swift */,
+				568839E81F7E04AE0004FEB8 /* NSComparisonPredicate+generator.swift */,
+				568839E01F7E04AE0004FEB8 /* NSSortDescriptor+generator.swift */,
+				568839EB1F7E04AF0004FEB8 /* Collection+CoreDataExtensions.swift */,
+				568839E71F7E04AE0004FEB8 /* NSFetchRequest+Myrrh.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		568839C11F7DFAFB0004FEB8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				568839D51F7DFAFC0004FEB8 /* Myrrh.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		568839C31F7DFAFB0004FEB8 /* Myrrh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 568839D81F7DFAFC0004FEB8 /* Build configuration list for PBXNativeTarget "Myrrh" */;
+			buildPhases = (
+				568839BF1F7DFAFB0004FEB8 /* Sources */,
+				568839C01F7DFAFB0004FEB8 /* Frameworks */,
+				568839C11F7DFAFB0004FEB8 /* Headers */,
+				568839C21F7DFAFB0004FEB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Myrrh;
+			productName = Myrrh;
+			productReference = 568839C41F7DFAFB0004FEB8 /* Myrrh.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		568839CC1F7DFAFC0004FEB8 /* MyrrhTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 568839DB1F7DFAFC0004FEB8 /* Build configuration list for PBXNativeTarget "MyrrhTests" */;
+			buildPhases = (
+				568839C91F7DFAFC0004FEB8 /* Sources */,
+				568839CA1F7DFAFC0004FEB8 /* Frameworks */,
+				568839CB1F7DFAFC0004FEB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				568839D01F7DFAFC0004FEB8 /* PBXTargetDependency */,
+			);
+			name = MyrrhTests;
+			productName = MyrrhTests;
+			productReference = 568839CD1F7DFAFC0004FEB8 /* MyrrhTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		568839BB1F7DFAFB0004FEB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = hereigns;
+				TargetAttributes = {
+					568839C31F7DFAFB0004FEB8 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					568839CC1F7DFAFC0004FEB8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 568839BE1F7DFAFB0004FEB8 /* Build configuration list for PBXProject "Myrrh" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 568839BA1F7DFAFB0004FEB8;
+			productRefGroup = 568839C51F7DFAFB0004FEB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				568839C31F7DFAFB0004FEB8 /* Myrrh */,
+				568839CC1F7DFAFC0004FEB8 /* MyrrhTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		568839C21F7DFAFB0004FEB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		568839CB1F7DFAFC0004FEB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		568839BF1F7DFAFB0004FEB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560CF9C11F99FF59005E1755 /* NSManagedObject+ValidateError.swift in Sources */,
+				568839F41F7E04AF0004FEB8 /* CoreDataStack.swift in Sources */,
+				568839F81F7E04AF0004FEB8 /* NSPredicate+generator.swift in Sources */,
+				568839F61F7E04AF0004FEB8 /* NSFetchRequest+Myrrh.swift in Sources */,
+				5631F0531F98B74C007A3660 /* MyrrhManagedObject.swift in Sources */,
+				568839F91F7E04AF0004FEB8 /* Query.swift in Sources */,
+				568839F11F7E04AF0004FEB8 /* Managed+Requests.swift in Sources */,
+				568839F31F7E04AF0004FEB8 /* Managed+Query.swift in Sources */,
+				568839FB1F7E04AF0004FEB8 /* Logger.swift in Sources */,
+				56712E611F7E5120001A56E1 /* Myrrh.swift in Sources */,
+				5631F0441F985741007A3660 /* CoreDataStack+Obervers.swift in Sources */,
+				568839F21F7E04AF0004FEB8 /* Managed+Chainable.swift in Sources */,
+				568839F51F7E04AF0004FEB8 /* Managed.swift in Sources */,
+				568839F71F7E04AF0004FEB8 /* NSComparisonPredicate+generator.swift in Sources */,
+				568839F01F7E04AF0004FEB8 /* Managed+Aggregation.swift in Sources */,
+				568839EF1F7E04AF0004FEB8 /* NSSortDescriptor+generator.swift in Sources */,
+				568839FA1F7E04AF0004FEB8 /* Collection+CoreDataExtensions.swift in Sources */,
+				560CF9C31F9A0E4A005E1755 /* NSManagedObject+Extensions.swift in Sources */,
+				568839FC1F7E04AF0004FEB8 /* NSManagedObjectContext+save.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		568839C91F7DFAFC0004FEB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		568839D01F7DFAFC0004FEB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 568839C31F7DFAFB0004FEB8 /* Myrrh */;
+			targetProxy = 568839CF1F7DFAFC0004FEB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		568839D61F7DFAFC0004FEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		568839D71F7DFAFC0004FEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		568839D91F7DFAFC0004FEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Myrrh/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hereigns.ios.Myrrh;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		568839DA1F7DFAFC0004FEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Myrrh/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hereigns.ios.Myrrh;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		568839DC1F7DFAFC0004FEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyrrhTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hereigns.ios.MyrrhTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		568839DD1F7DFAFC0004FEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyrrhTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hereigns.ios.MyrrhTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		568839BE1F7DFAFB0004FEB8 /* Build configuration list for PBXProject "Myrrh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				568839D61F7DFAFC0004FEB8 /* Debug */,
+				568839D71F7DFAFC0004FEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		568839D81F7DFAFC0004FEB8 /* Build configuration list for PBXNativeTarget "Myrrh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				568839D91F7DFAFC0004FEB8 /* Debug */,
+				568839DA1F7DFAFC0004FEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		568839DB1F7DFAFC0004FEB8 /* Build configuration list for PBXNativeTarget "MyrrhTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				568839DC1F7DFAFC0004FEB8 /* Debug */,
+				568839DD1F7DFAFC0004FEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 568839BB1F7DFAFB0004FEB8 /* Project object */;
+}
