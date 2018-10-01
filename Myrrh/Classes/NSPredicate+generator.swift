@@ -56,33 +56,33 @@ extension NSPredicate{
         let mir = Mirror(reflecting:value)
         switch mir.subjectType {
             
-        case _ as String.Type, _ as  ImplicitlyUnwrappedOptional<String>.Type,_ as String?.Type:
+        case _ as String.Type, _ as  Optional<String>.Type,_ as String?.Type:
             predicate = NSPredicate(format: "%K = %@", attribute,value as! String)
             break;
             
-        case _ as Date.Type, _ as ImplicitlyUnwrappedOptional<Date>.Type,_ as Date?.Type,
-             _ as NSDate.Type, _ as ImplicitlyUnwrappedOptional<NSDate>.Type,_ as NSDate?.Type:
+        case _ as Date.Type, _ as Optional<Date>.Type,_ as Date?.Type,
+             _ as NSDate.Type, _ as Optional<NSDate>.Type,_ as NSDate?.Type:
             predicate = NSPredicate(format: "%K = %@", attribute,value as! NSDate)
             break
             
 
-        case _ as Int.Type, _ as ImplicitlyUnwrappedOptional<Int>.Type, _ as Int?.Type,
-             _ as Int8.Type, _ as ImplicitlyUnwrappedOptional<Int8>.Type, _ as Int8?.Type,
-             _ as Int16.Type, _ as ImplicitlyUnwrappedOptional<Int16>.Type, _ as Int16?.Type,
-             _ as Int32.Type, _ as ImplicitlyUnwrappedOptional<Int32>.Type, _ as Int32?.Type,
-             _ as Int64.Type, _ as ImplicitlyUnwrappedOptional<Int64>.Type, _ as Int64?.Type:
+        case _ as Int.Type, _ as Optional<Int>.Type, _ as Int?.Type,
+             _ as Int8.Type, _ as Optional<Int8>.Type, _ as Int8?.Type,
+             _ as Int16.Type, _ as Optional<Int16>.Type, _ as Int16?.Type,
+             _ as Int32.Type, _ as Optional<Int32>.Type, _ as Int32?.Type,
+             _ as Int64.Type, _ as Optional<Int64>.Type, _ as Int64?.Type:
             predicate = NSPredicate(format: "%K = %ld", attribute,value as! Int64)
             break
             
-        case _ as Float.Type, _ as ImplicitlyUnwrappedOptional<Float>.Type, _ as Float?.Type:
+        case _ as Float.Type, _ as Optional<Float>.Type, _ as Float?.Type:
             predicate = NSPredicate(format: "%K = %%a", attribute,value as! Float)
             break
         
-        case _ as Double.Type, _ as ImplicitlyUnwrappedOptional<Double>.Type, _ as Double?.Type:
+        case _ as Double.Type, _ as Optional<Double>.Type, _ as Double?.Type:
             predicate = NSPredicate(format: "%K = %%la", attribute,value as! Double)
             break
             
-        case _ as NSNumber.Type, _ as  ImplicitlyUnwrappedOptional<NSNumber>.Type,_ as NSNumber?.Type:
+        case _ as NSNumber.Type, _ as  Optional<NSNumber>.Type,_ as NSNumber?.Type:
             predicate = NSPredicate(format: "%K = %@", attribute,value as! NSNumber)
             break
             

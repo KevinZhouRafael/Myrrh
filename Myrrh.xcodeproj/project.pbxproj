@@ -28,6 +28,11 @@
 		568839FA1F7E04AF0004FEB8 /* Collection+CoreDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839EB1F7E04AF0004FEB8 /* Collection+CoreDataExtensions.swift */; };
 		568839FB1F7E04AF0004FEB8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839EC1F7E04AF0004FEB8 /* Logger.swift */; };
 		568839FC1F7E04AF0004FEB8 /* NSManagedObjectContext+save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568839ED1F7E04AF0004FEB8 /* NSManagedObjectContext+save.swift */; };
+		CFEEF5B32003BF8C005DB068 /* ModelVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEEF5B22003BF8C005DB068 /* ModelVersion.swift */; };
+		CFEEF5B52003C4AA005DB068 /* MigrationStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEEF5B42003C4AA005DB068 /* MigrationStep.swift */; };
+		CFEEF5B72003C4F8005DB068 /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEEF5B62003C4F8005DB068 /* Migration.swift */; };
+		CFEEF5B92003C88D005DB068 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEEF5B82003C88D005DB068 /* Utilities.swift */; };
+		CFEEF5BB2003C8F7005DB068 /* NSPersistentStoreCoordinator+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEEF5BA2003C8F7005DB068 /* NSPersistentStoreCoordinator+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		568839EB1F7E04AF0004FEB8 /* Collection+CoreDataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+CoreDataExtensions.swift"; sourceTree = "<group>"; };
 		568839EC1F7E04AF0004FEB8 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		568839ED1F7E04AF0004FEB8 /* NSManagedObjectContext+save.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+save.swift"; sourceTree = "<group>"; };
+		CFEEF5B22003BF8C005DB068 /* ModelVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelVersion.swift; sourceTree = "<group>"; };
+		CFEEF5B42003C4AA005DB068 /* MigrationStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationStep.swift; sourceTree = "<group>"; };
+		CFEEF5B62003C4F8005DB068 /* Migration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migration.swift; sourceTree = "<group>"; };
+		CFEEF5B82003C88D005DB068 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CFEEF5BA2003C8F7005DB068 /* NSPersistentStoreCoordinator+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPersistentStoreCoordinator+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +146,7 @@
 		568839DE1F7DFBB40004FEB8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CFEEF5B12003BF66005DB068 /* migrate */,
 				5656159E1FB6BE3500FB196C /* observer */,
 				56712E601F7E5120001A56E1 /* Myrrh.swift */,
 				568839E51F7E04AE0004FEB8 /* CoreDataStack.swift */,
@@ -154,6 +165,18 @@
 				568839E71F7E04AE0004FEB8 /* NSFetchRequest+Myrrh.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		CFEEF5B12003BF66005DB068 /* migrate */ = {
+			isa = PBXGroup;
+			children = (
+				CFEEF5B62003C4F8005DB068 /* Migration.swift */,
+				CFEEF5B22003BF8C005DB068 /* ModelVersion.swift */,
+				CFEEF5B42003C4AA005DB068 /* MigrationStep.swift */,
+				CFEEF5B82003C88D005DB068 /* Utilities.swift */,
+				CFEEF5BA2003C8F7005DB068 /* NSPersistentStoreCoordinator+Extensions.swift */,
+			);
+			path = migrate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +236,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = hereigns;
 				TargetAttributes = {
 					568839C31F7DFAFB0004FEB8 = {
@@ -269,13 +292,18 @@
 			files = (
 				560CF9C11F99FF59005E1755 /* NSManagedObject+ValidateError.swift in Sources */,
 				568839F41F7E04AF0004FEB8 /* CoreDataStack.swift in Sources */,
+				CFEEF5BB2003C8F7005DB068 /* NSPersistentStoreCoordinator+Extensions.swift in Sources */,
 				568839F81F7E04AF0004FEB8 /* NSPredicate+generator.swift in Sources */,
 				568839F61F7E04AF0004FEB8 /* NSFetchRequest+Myrrh.swift in Sources */,
+				CFEEF5B32003BF8C005DB068 /* ModelVersion.swift in Sources */,
 				5631F0531F98B74C007A3660 /* MyrrhManagedObject.swift in Sources */,
 				568839F91F7E04AF0004FEB8 /* Query.swift in Sources */,
+				CFEEF5B52003C4AA005DB068 /* MigrationStep.swift in Sources */,
 				568839F11F7E04AF0004FEB8 /* Managed+Requests.swift in Sources */,
 				568839F31F7E04AF0004FEB8 /* Managed+Query.swift in Sources */,
 				568839FB1F7E04AF0004FEB8 /* Logger.swift in Sources */,
+				CFEEF5B72003C4F8005DB068 /* Migration.swift in Sources */,
+				CFEEF5B92003C88D005DB068 /* Utilities.swift in Sources */,
 				56712E611F7E5120001A56E1 /* Myrrh.swift in Sources */,
 				5631F0441F985741007A3660 /* CoreDataStack+Obervers.swift in Sources */,
 				568839F21F7E04AF0004FEB8 /* Managed+Chainable.swift in Sources */,
@@ -321,6 +349,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -328,6 +357,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -382,6 +412,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -389,6 +420,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -440,7 +472,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -462,7 +494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hereigns.ios.Myrrh;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -476,7 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hereigns.ios.MyrrhTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -490,7 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hereigns.ios.MyrrhTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

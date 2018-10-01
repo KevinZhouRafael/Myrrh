@@ -34,6 +34,31 @@ public class CoreDataStack{
         }
     }
     
+    //migrate manual invoke
+    public func createPersistentContainer<Version: ModelVersion>(
+        //
+        xcdatamodeldName:String,fromURL:URL,storeURL:URL, to version:Version,
+        //resursion use
+        migrating: Bool = false, progress: Progress? = nil,completion: @escaping (NSPersistentContainer) -> ()){
+        
+        let container = NSPersistentContainer(name: xcdatamodeldName)
+        
+        container.loadPersistentStores { _, error in
+            if error == nil {
+                DispatchQueue.main.async { completion(container) }
+            } else {
+                guard !migrating else { fatalError("was unable to migrate store") }
+                
+                DispatchQueue.global(qos: .userInitiated).async {
+                    migrateStore(from: fromURL, to: storeURL, targetVersion: Version.current, deleteSource: true,
+                                 progress: progress)
+                    
+                    self.createPersistentContainer(xcdatamodeldName: xcdatamodeldName, fromURL: fromURL, storeURL: storeURL, to: Version.current, migrating: migrating, progress: progress, completion: completion)
+                } }
+        }
+        
+    }
+    
     @available(iOS 10.0, *)
     public func setPersistentContainer(xcdatamodeldName:String){
         /*
@@ -43,6 +68,7 @@ public class CoreDataStack{
          error conditions that could cause the creation of the store to fail.
          */
         let container = NSPersistentContainer(name: xcdatamodeldName)
+
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             
             if let error = error as NSError? {
@@ -131,12 +157,7 @@ public class CoreDataStack{
                                     options: (autoMigrate ? [NSMigratePersistentStoresAutomaticallyOption:true,
                                                              NSInferMappingModelAutomaticallyOption:true]:nil))
         
-//        try! psc.addPersistentStore(ofType: NSSQLiteStoreType,
-//                                    configurationName: nil,
-//                                    at: storeURL,
-//                                    options: nil)
         
-
         let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         context.persistentStoreCoordinator = psc
         

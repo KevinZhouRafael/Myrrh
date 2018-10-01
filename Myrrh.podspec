@@ -28,6 +28,7 @@ Myrrh is a helper for CoreData. You will like it.
   s.source           = { :git => 'https://github.com/KevinZhouRafael/Myrrh.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.swift_version = "4.2"
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'Myrrh/Classes/**/*'
